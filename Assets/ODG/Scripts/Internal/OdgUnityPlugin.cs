@@ -26,29 +26,6 @@ public class OdgUnityPlugin : MonoBehaviour
 			#endif
 		#endif
 	}
-
-	/// <summary>
-	/// Gets the device's field of view (in degrees)
-	/// </summary>
-	/// <param name="fov">Reference to float value</param>
-	/// <returns>Returns true if successful</returns>
-	public bool GetFieldOfView(ref float fov)
-	{
-		bool success = true;
-		fov = 0;
-
-		if (plugin != null) {
-			fov = plugin.Call<float> ("getFieldOfView");
-		} else {
-			Debug.Log ("ODG plugin must be initialized first.");
-		}
-
-		if (fov <= 0) {
-			Debug.Log ("Failed to read device's field of view.");
-			success = false;
-		}
-		return success;
-	}
 }
 
 

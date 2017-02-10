@@ -58,11 +58,6 @@ public class OdgStereoCameraPlugin : MonoBehaviour {
 		leftCamera.rect = new Rect (0f, 0f, 0.5f, 1f);
 		rightCamera.rect = new Rect (0.5f, 0f, 0.5f, 1f);
 
-		// Use Unity's field of view default if retrieval fails
-		float fov = 0f;
-		if (odgUnityPlugin.GetFieldOfView(ref fov)) {
-			leftCamera.fieldOfView = rightCamera.fieldOfView = fov;
-		}
 	}
 
 	/// <summary>

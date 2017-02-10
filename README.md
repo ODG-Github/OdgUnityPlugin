@@ -1,7 +1,7 @@
 #Overview
 This repository includes a Unity plugin and sample scene for stereoscopic rendering on ODG glasses.  Head tracking is supported, in which the rotation data is read from the device’s sensors.  
 
-The camera prefab is a stereo-camera setup, where each camera splits the viewport, sets the interpupillary distance, and sets the field of view at runtime.  The other remaining camera settings can be configured.
+The camera prefab is a stereo-camera setup, where each camera splits the viewport and sets the interpupillary distance at runtime.  The other remaining camera settings can be configured.
 
 #Motivation
 The plugin can be used for stereoscopic 3D and/or 360 degree rendering.  Typical applications include 360 degree video players, virtual reality (VR), or augmented reality (AR) using 3DOF (degrees of freedom).
@@ -18,7 +18,7 @@ For the Android project:
 Note: On our glasses, black renders as transparent.  This is useful for AR applications on our see-through displays.  The LeftEye and RightEye of the ODGCamera has a default background color of black to achieve this effect.
 
 #Tests
-The plugin has been tested on Unity Editor 5.5 for MacOS and Windows platform
+The plugin has been tested on Unity Editor 5.5 for MacOS and Windows platform.  The plugin has been tested for R6 and R7.
 
 #License
 Copyright 2017 Osterhout Design Group
